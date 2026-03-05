@@ -1,11 +1,14 @@
 class GardenError(Exception):
     pass
 
+
 class PlantError(GardenError):
     pass
 
+
 class WaterError(GardenError):
     pass
+
 
 def plant_error() -> None:
     print("Testing PlantError...")
@@ -42,8 +45,7 @@ def garden_errors() -> None:
 
     if liters < 100:
         messages.append("Not enough water in the tank!")
-    
-    
+
     if len(messages) == 0:
         print("The garden is fine")
     else:
@@ -73,6 +75,7 @@ def main() -> None:
         print()
 
     print("All custom error types work correctly")
+
 
 if __name__ == "__main__":
     main()
