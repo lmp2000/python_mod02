@@ -1,4 +1,4 @@
-def test_error_types():
+def test_error_types() -> None:
     try:
         print("Testing ValueError...")
         int("abc")
