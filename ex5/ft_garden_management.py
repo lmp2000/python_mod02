@@ -123,7 +123,7 @@ def test_garden_management() -> None:
 
     manager.check_plant_health()
 
-    print("Testing error recovery...")
+    print("\nTesting error recovery...")
     try:
         raise WaterError("Not enough water in tank")
     except GardenError as e:
